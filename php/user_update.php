@@ -4,8 +4,8 @@ error_reporting(0);
 $tabela_do_email = $_POST['tabela_do_email'];
 
 $host = "aws.connect.psdb.cloud";
-$username = "23jmef4iu9rtjol4wp89";
-$password = "pscale_pw_aIx1CMAVCAzXtN1TfN2DTKgMxSxq70OEaW0uLhn2hdg";
+$username = "mezjollr1fu30nce3rpo";
+$password = "pscale_pw_SLhhghf8JQp9kXBm70Cmc7FTNMlNOqKrcqUZfFC2lYT";
 $dbname = "db_login_alunos";
 
 // Cria a conexão
