@@ -1,0 +1,120 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+}
+
+main{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.733),rgba(0, 0, 0, 0.877)), url("https://cglimpeza.com.br/wp-content/uploads/2019/02/2019-03-16-limpeza-de-academia.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    height: 80vh;
+}
+
+footer{
+    background-image: rgba(0, 0, 0, 0.884), url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9VhUuF6Z6RxrrhzyWZ7Fv1ASv2hCbZYOiGQ&usqp=CAU");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    height: 15vh;
+    
+}
+
+.responsive{
+    display: none;
+}
+
+.navbar-brand{
+    margin-left: 20px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.color{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+}
+
+.btn-custom{
+    padding: 14px 4rem;
+    text-align: center;
+    margin: 4px 25px;
+    border-radius: 25px;
+    font-size: 1em;
+    font-weight: bold;
+    border: 2px solid #fae151;
+    background-color: rgba(0, 0, 0, 0.356);
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-custom:hover{
+    transform: scale(1.1);
+}
+
+.right{
+    margin-right: 100px;
+}
+
+.distancia{
+    margin-bottom: 20px;
+}
+
+.custom-link{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+}
+
+.not-responsive{
+    display: inline;
+    margin: 0;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 770px) {
+
+    .color{
+        color: rgb(255, 255, 255);
+        font-size: 17px;
+    }
+
+    .btn-teste:hover{
+        transform: scale(1.02);
+    }
+
+    .not-responsive{
+        display:none;
+        
+    }
+
+    .responsive{
+        display:inline;
+    }
+
+    main{
+        height: 125vh;
+    }
+
+    
+
+}
+
+@media (max-width: 1600px) {
+
+    .btn-custom{
+        padding: 14px 3rem;
+    }
+}
+

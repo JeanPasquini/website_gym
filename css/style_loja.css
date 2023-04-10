@@ -1,0 +1,26 @@
+header{
+    position: relative;
+    height: 5vh;
+    width: 100%;
+    background-color: aqua;
+}
+
+main{
+    position: relative;
+    height: 90vh;
+}
+
+footer{
+    position: relative;
+    height: 5vh;
+}
+
+.bloco{
+    position: absolute;
+    left: 25%;
+    background-color: brown;
+    height: 90vh;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}

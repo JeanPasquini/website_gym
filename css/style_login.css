@@ -1,0 +1,142 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(https://cglimpeza.com.br/wp-content/uploads/2019/02/2019-03-16-limpeza-de-academia.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.login{
+    background-color: rgba(0, 0, 0, 0.8);
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 80px;
+    border-radius: 50px;
+    color: white;
+}
+
+.logo{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    
+}
+
+.falha_login{
+    font-size: 8px;
+    padding-bottom: 10px;
+    padding-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login_display{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input_login{
+    padding: 15px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+}
+
+.button1_center{
+    margin-top: 15px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button2_center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 5px 10px;
+    border-radius: 25px;
+    font-size: 17px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+span{
+    background: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span{
+    width: 100%;
+}
+
+button:hover{
+    border-color:rgba(0, 0, 0, 0.8);
+}
+
+/* responsive desgin */
+
+@media (max-height: 580px) {
+    .banner .login{
+        height: 40vh;
+    }
+
+    .banner .login .login_display{
+        font-size: 0.8rem;
+    }
+
+    .banner .login .falha_login{
+        font-size: 0.6rem;
+    }
+
+    .banner .login .button1_center{
+        margin-top: 10px ;
+    }
+
+    .banner .login .button2_center{
+        margin-top: 10px ;
+    }
+
+    .banner .login input{
+        height: 1.5vh;
+
+    }
+
+    .banner .login button{
+        height: 1vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,223 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+header{
+    margin: 0;
+    padding: 0;
+    position:relative;
+    width: 100%;
+    height: 13vh;
+    background-image: linear-gradient(to bottom, rgb(31, 31, 31), rgb(122, 92, 36))
+}
+
+main{
+    margin: 0;
+    padding: 0;
+    position:relative;
+    height: 82vh;
+    background-image: linear-gradient(to bottom, rgb(31, 31, 31), rgb(122, 92, 36))
+    
+}
+
+footer{
+    margin: 0;
+    padding: 0;
+    height: 5vh;
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgb(31, 31, 31), rgb(66, 66, 65))
+}
+
+.blocomaster{
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.bloco{
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    color: rgb(255, 255, 255);
+}
+
+.mapa{
+    padding-top: 3px;
+    width: 100%;
+    height: 15rem;
+    border: none;
+}
+
+.title{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.content{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.local1{
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+.local1_image{
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+.local2{
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+.local2_image{
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+.local3{
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+.local3_image{
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.navbar .toggle_btn{
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.action-btn:hover{
+    scale: 1.05;
+    color: #fff;
+}
+
+.action-btn:active{
+    scale: 0.95;
+}
+
+/* DROPDOWN MENU */
+
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 90px;
+    width: 300px;
+    height: 0;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.dropdown_menu.open{
+    height: 240px;
+}
+
+.dropdown_menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu .action-btn{
+    width: 89%;
+    display: flex;
+    justify-content: center;
+}
+
+/* responsive desgin */
+
+@media (max-width: 1050px), (max-height: 810px) {
+    .navbar .links{
+    display: none;
+
+    }
+
+    .navbar .toggle_btn{
+        display: block;
+    }
+
+    .dropdown_menu {
+        display: block;
+        z-index: 1;
+    }
+
+    header {
+        height: 18vh;
+    }
+}

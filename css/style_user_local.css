@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+
+body{
+    font-family: sans-serif;
+    width: 100%;
+    height: 100vh;
+}
+
+header{
+    width: 100%;
+    background-color: rgba(108, 124, 124, 0.671);
+    height: 5vh;
+}
+
+main{
+    width: 100%;
+    height: 90vh;
+}
+
+footer{
+    width: 100%;
+    height: 5vh;
+    background-color: rgba(108, 124, 124, 0.671);
+}
+
+.banner{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(https://cglimpeza.com.br/wp-content/uploads/2019/02/2019-03-16-limpeza-de-academia.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.bloco_geral{
+    height: 100%;
+    padding: 1.5vh ;
+    display: flex;
+    justify-content: center;
+}
+
+.bloco_geral_info{
+    width: 30%;
+    height: 87vh;
+    border-style: solid; border-radius: 10px; border-width: 1.5px;
+    background-color: rgba(0, 0, 0, 0.342);
+    margin: 0 5px
+}
+
+.bloco_info{
+    margin: 5px 5px;
+    height: 5vh;
+    border-style: solid; border-radius: 10px; border-width: 1.5px;
+    background-color: rgba(255, 255, 255, 0.342);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+}
+
+.info{
+    font-size: 20px;
+    color: aliceblue;
+}
+
+.bloco_geral_dados{
+    width: 30%;
+    height: 87vh;
+    border-style: solid; border-radius: 10px; border-width: 1.5px;
+    background-color: rgba(0, 0, 0, 0.342);
+    margin: 0 5px
+}
+
+.bloco_dados{
+    margin: 5px 5px;
+    height: 5vh;
+    border-style: solid; border-radius: 10px; border-width: 1.5px;
+    background-color: rgba(255, 255, 255, 0.26);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+}
+
+.dados{
+    font-size: 20px;
+    color: aliceblue;
+    margin: 5px;
+}
+
