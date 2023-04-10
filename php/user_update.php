@@ -3,10 +3,10 @@ error_reporting(0);
 
 $tabela_do_email = $_POST['tabela_do_email'];
 
-$host = "localhost";
-$username = "root";
-$password = "";
-$dbname = "db_login";
+$host = "aws.connect.psdb.cloud";
+$username = "y8p9if3v553u850ab821";
+$password = "pscale_pw_EiqefbjOxbSFxRyAdcsNDp0a3wJNY5UHw4TO0X8UNJ5";
+$dbname = "db_login_alunos";
 
 // Cria a conexão
 $mysqli = new mysqli($host, $username, $password, $dbname);
